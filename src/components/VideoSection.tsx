@@ -196,29 +196,10 @@ export function VideoSection({ videoConfig }: VideoSectionProps) {
                         <Maximize className="w-5 h-5" />
                       </button>
                     </div>
-                  )
+                  )}
                 </div>
               )
-                /* Requirement: Beautiful Placeholder when no video source is active */
-            <div className="w-full h-full bg-gradient-to-br from-[#1a0b2e] via-[#2d124d] to-[#120422] flex flex-col items-center justify-center p-8 text-center space-y-4">
-  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FF6FAE]/20 flex items-center justify-center text-[#FF6FAE]">
-    <Gift className="w-8 h-8 sm:w-10 sm:h-10 text-pink-300" />
-  </div>
-
-  <div className="space-y-2 max-w-md">
-    <h4 className="font-serif text-2xl sm:text-3xl text-pink-200">
-      🎁 A Special Message Will Be Here
-    </h4>
-
-    <p className="text-xs sm:text-sm text-purple-200/90 font-poppins">
-      Place your video file inside:
-    </p>
-
-    <div className="inline-block px-3 py-1.5 rounded-xl bg-black/60 border border-pink-500/30 text-amber-300 font-mono text-xs font-semibold">
-      public/videos/birthday.mp4
-    </div>
-  </div>
-</div>
+               
               )}
             </div>
           </motion.div>
