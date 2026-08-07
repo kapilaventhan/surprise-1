@@ -198,7 +198,7 @@ export function VideoSection({ videoConfig }: VideoSectionProps) {
                     </div>
                   )}
                 </div>
-              ) : (
+              )
                 /* Requirement: Beautiful Placeholder when no video source is active */
                 <div className="w-full h-full bg-gradient-to-br from-[#1a0b2e] via-[#2d124d] to-[#120422] flex flex-col items-center justify-center p-8 text-center space-y-4">
                   <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#FF6FAE]/20 flex items-center justify-center text-[#FF6FAE]">
