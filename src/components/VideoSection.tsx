@@ -196,7 +196,7 @@ export function VideoSection({ videoConfig }: VideoSectionProps) {
                         <Maximize className="w-5 h-5" />
                       </button>
                     </div>
-                  )}
+                  )
                 </div>
               )
                 /* Requirement: Beautiful Placeholder when no video source is active */
