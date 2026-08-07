@@ -208,4 +208,3 @@ export function VideoSection({ videoConfig }: VideoSectionProps) {
     </section>
   );
 }
-this os the hole code find any error
