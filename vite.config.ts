@@ -10,6 +10,11 @@ export default defineConfig(() => {
     build: {
       chunkSizeWarningLimit: 2000,
     },
+    preview: {
+  allowedHosts: [
+    "surprise-1-uksm.onrender.com"
+  ],
+},
 
     resolve: {
       alias: {
