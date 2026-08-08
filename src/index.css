@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-great-vibes {
+    font-family: 'Great Vibes', cursive, serif;
+  }
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  .font-handwriting {
+    font-family: 'Dancing Script', 'Great Vibes', cursive;
+  }
+}
+
+/* Glassmorphism Effects */
+.glass-panel {
+  background: rgba(26, 11, 46, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 111, 174, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(106, 13, 173, 0.25), 0 0 15px rgba(255, 111, 174, 0.1);
+}
+
+.glass-card {
+  background: rgba(35, 15, 60, 0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(192, 132, 252, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(255, 111, 174, 0.5);
+  box-shadow: 0 15px 35px rgba(106, 13, 173, 0.4), 0 0 20px rgba(255, 111, 174, 0.3);
+}
+
+/* 3D Flip Card Styles */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Glowing text and shadows */
+.text-glow {
+  text-shadow: 0 0 12px rgba(255, 111, 174, 0.8), 0 0 25px rgba(192, 132, 252, 0.6);
+}
+
+.text-glow-rose {
+  text-shadow: 0 0 10px rgba(244, 63, 94, 0.8), 0 0 20px rgba(255, 111, 174, 0.5);
+}
+
+.box-glow {
+  box-shadow: 0 0 25px rgba(255, 111, 174, 0.4), 0 0 50px rgba(106, 13, 173, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0518;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6A0DAD 0%, #FF6FAE 100%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FF6FAE 0%, #C084FC 100%);
+}
+
+/* Heartbeat Animation */
+@keyframes heartPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(255, 111, 174, 0.6)); }
+  14% { transform: scale(1.15); filter: drop-shadow(0 0 15px rgba(255, 111, 174, 0.9)); }
+  28% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(255, 111, 174, 0.6)); }
+  42% { transform: scale(1.15); filter: drop-shadow(0 0 15px rgba(255, 111, 174, 0.9)); }
+  70% { transform: scale(1); filter: drop-shadow(0 0 5px rgba(255, 111, 174, 0.6)); }
+}
+
+.heart-beat {
+  animation: heartPulse 1.8s infinite ease-in-out;
+}
+
+/* Custom Sparkle and Cursor Trail */
+.sparkle-particle {
+  pointer-events: none;
+  position: fixed;
+  border-radius: 50%;
+  animation: sparkleFade 0.8s forwards linear;
+  z-index: 9999;
+}
+
+@keyframes sparkleFade {
+  0% { opacity: 1; transform: scale(1) translateY(0); }
+  100% { opacity: 0; transform: scale(0.2) translateY(-20px); }
+}
+
+/* Envelope 3d Styles */
+.envelope-wrapper {
+  perspective: 1000px;
+}
+
