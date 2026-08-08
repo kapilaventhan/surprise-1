@@ -1,6 +1,0 @@
-{
-  "name": "Romantic Birthday Surprise",
-  "description": "A luxury interactive romantic birthday experience with music, countdown, love letter, memory timeline, photo gallery, love notes, and magical fireworks.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
